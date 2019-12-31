@@ -7,10 +7,10 @@ import { selectDirectorySections } from '../../redux/directory/directory.selecto
 import MenuItem from './../menu-item/menu-item.component';
 import './directory.styles.scss';
 
-const Directory = ({ sections, history, match }) => (
+const Directory = ({ sections }) => (
   <div className='directory-menu'>
-    {sections.map(({ id, linkUrl, ...sectionProps }) => (
-      <MenuItem key={id} {...sectionProps} onClick={() => history.push(`/`)} />
+    {sections.map(({ id, ...sectionProps }) => (
+      <MenuItem key={id} {...sectionProps} />
     ))}
   </div>
 );

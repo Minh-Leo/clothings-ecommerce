@@ -20,6 +20,7 @@ const CollectionPage = ({ collection }) => {
   );
 };
 
+// ownProps is other props of this component
 const mapStateToProps = (state, ownProps) => ({
   collection: selectCollection(ownProps.match.params.collectionId)(state)
 });
