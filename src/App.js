@@ -1,8 +1,8 @@
 import React from 'react';
 // Redux stuffs
 import { connect } from 'react-redux';
-import { setCurrentUser } from './redux/user/user.actions';
 import { createStructuredSelector } from 'reselect';
+import { setCurrentUser } from './redux/user/user.actions';
 import { selectCurrentUser } from './redux/user/user.selectors';
 
 import { Switch, Route, Redirect } from 'react-router-dom';
@@ -34,6 +34,7 @@ class App extends React.Component {
       } else {
         setCurrentUser(userAuth);
       }
+
       // this.setState({ currentUser: user });
       // createUserProfileDocument(user);
     });
