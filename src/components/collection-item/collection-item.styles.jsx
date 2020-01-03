@@ -8,6 +8,7 @@ export const CollectionItemContainer = styled.div`
   height: 350px;
   align-items: center;
   position: relative;
+  margin: 0 3px;
   &:hover {
     .image {
       opacity: 0.8;
@@ -47,9 +48,11 @@ export const CollectionFooterContainer = styled.div`
 export const NameContainer = styled.span`
   width: 90%;
   margin-bottom: 15px;
+  margin-left: 15px;
 `;
 
 export const PriceContainer = styled.span`
   width: 10%;
   text-align: right;
+  margin-right: 15px;
 `;
